@@ -2,8 +2,22 @@
   "outputDirectory": ".",
   "builds": [
     {
-      "src": "index.html",
+      "src": "**/*",
       "use": "@vercel/static"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.jsx",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
     }
   ]
 }
