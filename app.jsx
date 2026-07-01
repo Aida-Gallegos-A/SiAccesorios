@@ -71,7 +71,7 @@ function App() {
       <Footer lang={lang} setPage={goPage} />
       <WAFab onClick={() => {
         const msg = lang === 'es' ? 'Hola, vengo del sitio web de SI Accesorios.' : 'Hi, coming from the SI Accesorios site.';
-        window.open('https://wa.me/525523177717?text=' + encodeURIComponent(msg), '_blank');
+        window.open('https://wa.me/525554659675?text=' + encodeURIComponent(msg), '_blank');
       }} />
 
       {cartOpen && <CartDrawer cart={cart} setCart={setCart} lang={lang} onClose={() => setCartOpen(false)} />}

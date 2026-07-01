@@ -132,8 +132,8 @@ function Footer({ lang, setPage }) {
           </div>
           <div className="ftr-col">
             <h5>{lang === 'es' ? 'Contacto' : 'Contact'}</h5>
-            <a href="tel:+525523177717">+52 55 2317 7717</a>
-            <a href="https://wa.me/525523177717" target="_blank">WhatsApp</a>
+            <a href="tel:+525554659675">+52 55 5465 9675</a>
+            <a href="https://wa.me/525554659675" target="_blank">WhatsApp</a>
             <a href="mailto:hola@siaccesorios.mx">hola@siaccesorios.mx</a>
           </div>
           <div className="ftr-col">
@@ -171,7 +171,7 @@ function CartDrawer({ cart, setCart, lang, onClose }) {
   const sendWA = () => {
     const lines = items.map(p => `• ${p.title} (${p.sku}) ×${p.qty} — ${p.price == null ? T.cart_toquote : fmt(p.price * p.qty)}`).join('\n');
     const msg = `${lang === 'es' ? 'Hola, me interesa cotizar:' : 'Hi, I\'d like to quote:'}\n\n${lines}\n\n${T.cart_total}: ${fmt(total)}${hasToQuote ? ' (+ ' + T.cart_toquote.toLowerCase() + ')' : ''}`;
-    window.open('https://wa.me/525523177717?text=' + encodeURIComponent(msg), '_blank');
+    window.open('https://wa.me/525554659675?text=' + encodeURIComponent(msg), '_blank');
   };
   const setQty = (id, q) => { if (q <= 0) setCart(cart.filter(c => c.id !== id)); else setCart(cart.map(c => c.id === id ? { ...c, qty: q } : c)); };
 
@@ -223,7 +223,7 @@ function ConfigModal({ lang, onClose, addToCart, viewProduct }) {
   const sendWA = () => {
     if (!product) return;
     const msg = `${lang === 'es' ? 'Cotización por modelo:' : 'Quote by model:'}\n${brand} ${model.name}\n${product.title} (${product.sku})\n${product.price == null ? T.product_quote_price : fmt(product.price)}`;
-    window.open('https://wa.me/525523177717?text=' + encodeURIComponent(msg), '_blank');
+    window.open('https://wa.me/525554659675?text=' + encodeURIComponent(msg), '_blank');
   };
 
   return (

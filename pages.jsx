@@ -218,7 +218,7 @@ function PageProduct({ productId, lang, setPage, addToCart }) {
 
   const sendWA = () => {
     const msg = `${lang === 'es' ? 'Quiero cotizar:' : 'Quote request:'} ${product.title} (${product.sku}) — ${priceLabel(product.price, lang)}`;
-    window.open('https://wa.me/525523177717?text=' + encodeURIComponent(msg), '_blank');
+    window.open('https://wa.me/525554659675?text=' + encodeURIComponent(msg), '_blank');
   };
 
   return (
@@ -316,7 +316,7 @@ function PageContact({ lang }) {
           </form>
           <div>
             <div className="contact-info">
-              <h4>WhatsApp</h4><p>+52 55 2317 7717</p>
+              <h4>WhatsApp</h4><p>+52 55 5465 9675</p>
               <h4>{lang === 'es' ? 'Correo' : 'Email'}</h4><p>hola@siaccesorios.mx</p>
               <h4>{lang === 'es' ? 'Horario' : 'Hours'}</h4><p>{T.footer_hours}</p>
               <h4>{lang === 'es' ? 'Dirección' : 'Address'}</h4><p style={{fontSize: 17}}>General Juan Cano #87, Int. 100<br/>Col. San Miguel Chapultepec<br/>Miguel Hidalgo, CDMX</p>
